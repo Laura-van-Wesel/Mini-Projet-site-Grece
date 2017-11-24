@@ -1,0 +1,997 @@
+/* CSS Document */
+
+			body
+			{
+/* 			   width: 1000px;*/
+			   margin-left: 40px;
+			   /*margin-top: 20px; /* Pour éviter de coller avec le haut de la fenêtre du navigateur. Essayez d'enlever pour voir ! 
+			   margin-bottom: 20px; */    /* Idem pour le bas du navigateur */
+			   background-image:url("IMG_1171.jpg"); /*; Une petite image de fond pour éviter d'avoir un fond blanc */
+			   font-family: Verdana, "DejaVu Sans", "Bitstream Vera Sans", Geneva, sans-serif;
+			   font-size: 100%;
+			}
+			
+			#en_tete
+			{
+			   width: 1000px;
+			   height: 100px;
+			   margin-bottom: 10px;
+			   margin-left:300px;
+			}
+			
+			p
+			{
+				width: 350px;
+				border:1px solid black;
+				texte-align:justify;
+				}
+			
+				
+			h1
+			{
+				margin-left:40px;
+				font-family: Copperplate gothic light, Verdana, "DejaVu Sans", "Bitstream Vera Sans", Geneva, sans-serif;
+				color:#22427C;
+				font-weight:bold;
+				/*font-style: italic;*/
+			}
+
+			h2
+			{
+				margin-left:15px;
+				font-family: Verdana, "DejaVu Sans", "Bitstream Vera Sans", Geneva, sans-serif;
+				color:#0ebe26;
+				font-weight:bold;
+				/*font-style: italic;*/
+			}
+			
+			h3
+			{
+				margin-left:15px;
+				font-family: Verdana, "DejaVu Sans", "Bitstream Vera Sans", Geneva, sans-serif;
+				color:#0ebe26;
+				font-weight:bold;
+				font-style: italic;
+			}
+			
+			h5
+			{
+			margin-left:15px;
+			font-family: Copperplate gothic light;
+			color:#FEFEFE;
+			font-weight:bold;
+			font-style: italic;
+			}
+			
+			input, textarea
+			{
+				font-family: Verdana, "DejaVu Sans", "Bitstream Vera Sans", Geneva, sans-serif; /* On modifie la police du texte tapé l'intérieur des champs */
+			}
+			
+			.tableau_vert
+			{
+				background-color:#e8fded;
+				width: 98%;
+				border: 2px solid #0ebe26;
+			}
+			
+			.tableau_rouge
+			{
+				background-color:#fde8eb;
+				width: 98%;
+				border: 2px solid #FF0000;
+			}
+						
+			.tableau_bleu
+			{
+				background-color:#d3e4ff;
+				width: 98%;
+				border: 2px solid #0b51c5;
+			}
+							
+			.fond_rouge
+			{
+				background-color:#fde8eb;
+			}
+			
+			.fond_vert
+			{
+				background-color:#e8fded;
+			}
+			.vert
+			{
+				color:#0ebe26;
+			}
+			
+			.gris
+			{
+				color:#757575;
+			}
+						
+			.noir_gras
+			{
+				color:#000000;
+				font-weight:bold;
+				font-size: 120%
+			}
+	
+			.vert_gras
+			{
+				color:#0ebe26;
+				font-weight:bold;
+			}
+	
+			.vert_gras_italique
+			{
+				color:#0ebe26;
+				font-weight:bold;
+				font-style: italic;
+			}
+									
+			.avertissement
+			{
+				font-weight:bold;
+				color:#FF0000;
+				font-size: 140%
+			}
+			
+			.position
+			{	
+				position: absolute;
+				left: 25%;
+			}
+					
+			.imageflottante
+			{
+			   float: left;
+			}
+			.imageflottante2
+			{
+			   float: right;
+			   margin: 2px !important; /* pris en compte par Firefox */
+			   margin: 0px; /* pris en compte par IE*/
+			}
+
+			.mention
+			{
+			   width: 990px;
+			   text-align: justify;
+				font-size: 80%
+			}
+			
+			input:focus, textarea:focus, select:focus /* Quand le curseur est sur un champ */ 
+			{
+				background-color:#ecf1f4;
+			}
+			
+			table
+			{
+				border-spacing: 0px;
+				border-collapse: collapse;
+				font-size: 100%;
+			}
+			
+			table.entete
+			{
+				width: 940px;
+				border: 2px solid #0ebe26;
+				-moz-border-radius: 10px;
+				-webkit-border-radius: 10px;
+				border-radius: 10px;
+			}
+			
+			td.liste
+			{
+				text-align: left;
+				padding-left: 6px;
+				padding-right: 6px;
+				border: 1px solid #0ebe26;
+			}
+						
+			td.liste_cov
+			{
+				text-align: left;
+				padding-left: 10px;
+				padding-right: 6px;
+				border: 1px solid #0ebe26;
+			}
+			
+			td.liste_cov_top
+			{
+				vertical-align: top;
+				text-align: left;
+				padding-left: 10px;
+				padding-right: 6px;
+				border: 1px solid #0ebe26;
+			}
+
+			th.liste
+			{
+				text-align: center;
+				padding-left: 6px;
+				padding-right: 6px;
+				font-weight:bold;
+				color: #0ebe26;
+				border: 1px solid #0ebe26;
+			}
+
+			th.liste_cov
+			{
+				text-align: center;
+				padding-left: 6px;
+				padding-right: 6px;
+				font-weight:bold;
+				color: #0ebe26;
+				border: 1px solid #0ebe26;
+				font-size: 120%;
+			}
+
+			td.liste_centre
+			{
+				text-align: center;
+				padding-left: 4px;
+				border: 1px solid #0ebe26;
+				font-weight:bold;
+			}
+			
+			td.liste_centre_cov
+			{
+				text-align: center;
+				padding: 6px;
+				border: 1px solid #0ebe26;
+				font-weight:bold;
+			}
+			
+			legend /* On met un peu plus en valeur les titres des fieldsets */
+			{
+				font-family: Verdana, "DejaVu Sans", "Bitstream Vera Sans", Geneva, sans-serif;
+				color:#0ebe26;
+				font-weight:bold;
+				font-style: italic;
+			}
+			
+
+			.legende_form
+			{
+				font-family: Verdana, "DejaVu Sans", "Bitstream Vera Sans", Geneva, sans-serif;
+				color:#000000;
+				font-weight:bold;
+				font-style: italic;
+				font-size: 115%
+			}
+						
+			.grosselegende
+			{
+				ffont-family: Verdana, "DejaVu Sans", "Bitstream Vera Sans", Geneva, sans-serif;
+				color:#0ebe26;
+				font-weight:bold;
+				font-style: italic;
+				font-size: 150%
+			}
+
+			.petitelegende
+			{
+				font-family: Verdana, "DejaVu Sans", "Bitstream Vera Sans", Geneva, sans-serif;
+				color:#0ebe26;
+				font-weight:bold;
+				font-style: italic;
+				font-size: 115%
+			}
+			
+			.grosselegende_rouge
+			{
+				font-family: Verdana, "DejaVu Sans", "Bitstream Vera Sans", Geneva, sans-serif;
+				color:#FF0000;
+				font-weight:bold;
+				font-style: italic;
+				font-size: 150%
+			}
+
+			fieldset
+			{
+				/*margin:10%;  Une marge pour séparer les fieldset */
+				padding:1%;
+				background-color:#FFFFFF;
+				border:  2px solid #0ebe26;
+				-moz-border-radius: 10px;
+				-webkit-border-radius: 10px;
+				border-radius: 10px;
+			}
+
+			.fieldset_form_iden
+			{
+				width: 600px;
+				margin:1%;
+				padding:1%;
+				background-color:#FFFFFF;
+				border:  2px solid #0ebe26;
+				-moz-border-radius: 10px;
+				-webkit-border-radius: 10px;
+				border-radius: 10px;
+			}
+			
+			.fieldset_form_aff
+			{
+				width: 536px;
+				margin:1%;
+				padding:1%;
+				background-color:#F5F5F5;
+				border:  2px solid #000000;
+				-moz-border-radius: 10px;
+				-webkit-border-radius: 10px;
+				border-radius: 10px;
+			}
+			
+			.fieldset_form_choix
+			{
+				width: 536px;
+				margin:1%;
+				padding:1%;
+				background-color:#FFFFFF;
+				border:  2px solid #0ebe26;
+				-moz-border-radius: 10px;
+				-webkit-border-radius: 10px;
+				border-radius: 10px;
+			}
+
+			.fieldset_cov
+			{
+				/*margin:10%;  Une marge pour séparer les fieldset */
+				padding:1%;
+				background-color:#FFFFFF;
+				width: 1000px;
+				border:  2px solid #0ebe26;
+				-moz-border-radius: 10px;
+				-webkit-border-radius: 10px;
+				border-radius: 10px;
+			}
+
+			.fieldset_ident_cov
+			{
+				/*margin:10%;  Une marge pour séparer les fieldset */
+				padding:1%;
+				background-color:#FFFFFF;
+				width: 630px;
+				border:  2px solid #0ebe26;
+				-moz-border-radius: 10px;
+				-webkit-border-radius: 10px;
+				border-radius: 10px;
+			}
+
+			.fieldset_modif_cov
+			{
+				/*margin:10%;  Une marge pour séparer les fieldset */
+				padding:1%;
+				background-color:#FFFFFF;
+				width: 630px;
+				border:  2px solid #0ebe26;
+				-moz-border-radius: 10px;
+				-webkit-border-radius: 10px;
+				border-radius: 10px;
+			}
+
+			.fieldset_cov_com
+			{
+				/*margin:10%;  Une marge pour séparer les fieldset */
+				padding:1%;
+				text-align: center;
+				background-color:#FFFFFF;
+				width: 540px;
+				border:  2px solid #0ebe26;
+				-moz-border-radius: 10px;
+				-webkit-border-radius: 10px;
+				border-radius: 10px;
+			}
+
+			#fieldset_form_suppr_choix
+			{
+				/*margin:10%;  Une marge pour séparer les fieldset */
+				padding:1%;
+				background-color:#FFFFFF;
+				width: 420px;
+				border:  2px solid #FF0000;
+				-moz-border-radius: 10px;
+				-webkit-border-radius: 10px;
+				border-radius: 10px;
+			}
+				
+			.identifiants
+			{
+				/*margin:10%;  Une marge pour séparer les fieldset */
+				padding:1%;
+				background-color:#FFFFFF;
+				width: 650px;
+				border:  2px solid #0ebe26;
+				-moz-border-radius: 10px;
+				-webkit-border-radius: 10px;
+				border-radius: 10px;
+			}
+
+			.fieldset_form_maj
+			{
+				/*margin:10%;  Une marge pour séparer les fieldset */
+				padding:1%;
+				background-color:#FFFFFF;
+				width: 930px;
+				border:  2px solid #0ebe26;
+				-moz-border-radius: 10px;
+				-webkit-border-radius: 10px;
+				border-radius: 10px;
+			}
+			
+			#fieldset_papiers
+			{
+				/*margin:10%;  Une marge pour séparer les fieldset */
+				padding:1%;
+				background-color:#FFFFFF;
+				width: 620;
+				border:  2px solid #0ebe26;
+				-moz-border-radius: 10px;
+				-webkit-border-radius: 10px;
+				border-radius: 10px;
+			}
+			
+			#fieldset_papiers2
+			{
+				/*margin:10%;  Une marge pour séparer les fieldset */
+				padding:1%;
+				background-color:#FFFFFF;
+				width: 700;
+				border:  2px solid #0ebe26;
+				-moz-border-radius: 10px;
+				-webkit-border-radius: 10px;
+				border-radius: 10px;
+			}
+						
+			#fieldset_liste
+			{
+				/*margin:10%;  Une marge pour séparer les fieldset */
+				padding:1%;
+				background-color:#FFFFFF;
+				width: 420px;
+				border:  2px solid #0ebe26;
+				-moz-border-radius: 10px;
+				-webkit-border-radius: 10px;
+				border-radius: 10px;
+			}
+			
+			#fieldset_rouge
+			{
+				/*margin:10%;  Une marge pour séparer les fieldset */
+				padding:1%;
+				background-color:#ffaeff;
+				width: 940px;
+				border:  2px solid #FF0000;
+				-moz-border-radius: 10px;
+				-webkit-border-radius: 10px;
+				border-radius: 10px;
+			}
+
+			#fieldset_maj_adm
+			{
+				/*margin:10%;  Une marge pour séparer les fieldset */
+				padding:1%;
+				background-color:#f5fff5;
+				width: 940px;
+				border:  2px solid #0ebe26;
+				-moz-border-radius: 10px;
+				-webkit-border-radius: 10px;
+				border-radius: 10px;
+			}				
+		
+			.sous_fieldset
+			{
+				/* margin-bottom:15px;  Une marge pour séparer les fieldset */
+				padding:1%;
+				background-color:#FFFFFF;
+				width: 1200px;
+				border:  2px solid #0ebe26;
+				-moz-border-radius: 10px;
+				-webkit-border-radius: 10px;
+				border-radius: 10px;
+			}	
+
+		/* Tout le CSS suivant concerne l'infobulle */
+			
+			/* Rend invisible tout notre bloc span */
+			a.info_bulle span
+			{								   
+				position       :  absolute;
+				top            :  -2000em;
+				left           :  -2000em;
+				width          :  1px;
+				height         :  1px;
+				overflow       :  hidden; 
+				background     :  #d9fbbe;   /* Définition du fond, sinon on a le même que notre lien #DDEEFF */
+				border         :  1px solid #0ebe26; /* Définition des bordures */
+			} 
+
+			a.info_bulle
+			{				
+			  color           : #04300a;
+			  
+			  text-decoration : none; 
+			  
+			  padding         : 2px 16px 2px 2px; /*Définition des marges intérieures de notre lien */
+			  
+			  /* Définition de l'arrière plan de notre lien */
+			  background      : transparent url('images/interrogation.gif') no-repeat right center;
+			  
+			  position        : absolute; /* Indispensable pour le bon positionnement de l'info-bulle, avant il y avait relative */ 
+			}  
+			 
+			a.info_bulle:hover 
+			{
+			   border          : 0;   ligne qui corrige le bug d'IE6 et inférieur */
+			   background: none; /* correction d'un bug IE */
+			}  
+
+			/* Rend visible tout notre bloc span et lui attribue une taille */
+			a.info_bulle:hover span, a.info_bulle:focus span, a.info_bulle:active span 
+			{
+				padding         : 16px;
+				top        :  auto;
+				left       :  auto;
+				width      :  350px;
+				height     :  auto;
+				overflow   :  visible;
+			}
+		/* Tout le CSS suivant concerne l'infobulle Avertissement */
+			
+			/* Rend invisible tout notre bloc span */
+			a.avertis_bulle span
+			{								   
+				position       :  absolute;
+				top            :  -2000em;
+				left           :  -2000em;
+				width          :  1px;
+				height         :  1px;
+				overflow       :  hidden; 
+				background     :  #d9fbbe;   /* Définition du fond, sinon on a le même que notre lien #DDEEFF */
+				border         :  1px solid #0ebe26; /* Définition des bordures */
+			} 
+
+			a.avertis_bulle
+			{				
+			  color           : #04300a;
+			  
+			  text-decoration : none; 
+			  
+			  padding         : 2px 16px 2px 2px; /*Définition des marges intérieures de notre lien */
+			  
+			  /* Définition de l'arrière plan de notre lien */
+			  background      : transparent url('images/avertissement.gif') no-repeat right center;
+			  
+			  position        : absolute; /* Indispensable pour le bon positionnement de l'avertis-bulle, avant il y avait relative */ 
+			}  
+			 
+			a.avertis_bulle:hover 
+			{
+			   border          : 0;   ligne qui corrige le bug d'IE6 et inférieur */
+			   background: none; /* correction d'un bug IE */
+			}  
+
+			/* Rend visible tout notre bloc span et lui attribue une taille */
+			a.avertis_bulle:hover span, a.avertis_bulle:focus span, a.avertis_bulle:active span 
+			{
+				padding         : 16px;
+				top        :  auto;
+				left       :  auto;
+				width      :  320px;
+				height     :  auto;
+				overflow   :  visible;
+			}
+			.submit_voyant
+			{
+				position: absolute;
+				left: 25%;	
+				width : 250px;
+				height: 50px;
+				font-weight:bold;
+				font-size: 130%
+			}
+			.submit_voyant2
+			{
+				width : 380px;
+				height: 50px;
+				font-weight:bold;
+				font-size: 120%
+			}
+			.submit_form
+			{
+				width : 200px;
+				height: 40px;
+				font-weight:bold;
+				font-size: 105%
+			}			
+.button_deconnexion {
+	position: absolute;
+    left: 400px;
+    top: 10px;
+	color: #434444;
+	font-family: Arial, Hevlvetica, sans-serif;
+	text-align: center;
+	font-size: 16px;
+	font-weight: bold;
+	border: 0px;
+	width: auto;
+	background: none;
+	padding: 0px 16px;
+	margin: 0px;
+	cursor: pointer;
+	background-image: url(images/deco1.png) ;
+	background-repeat: no-repeat;
+	background-position: 0px 0px;
+	text-decoration: none;
+}
+
+.button_deconnexion:hover {
+	color: #fb364d;
+	font-family: Arial, Hevlvetica, sans-serif;
+	text-align: center;
+	font-size: 16px;
+	font-weight: bold;
+	border: 0px;
+	width: auto;
+	background: none;
+	padding: 0px 16px;
+	margin: 0px;
+	cursor: pointer;
+  background-image: url(images/deco2.png) ;
+	background-repeat: no-repeat;
+	background-position: 0px 0px;
+	text-decoration: none;
+}
+
+.button_deconnexion:active  {
+	color: #000000;
+	font-family: Arial, Hevlvetica, sans-serif;
+	text-align: center;
+	font-size: 16px;
+	font-weight: bold;
+	border: 0px;
+	width: auto;
+	background: none;
+	padding: 0px 16px;
+	margin: 0px;
+	cursor: pointer;
+  background-image: url(images/deco3.png) ;
+	background-repeat: no-repeat;
+	background-position: 0px 0px;
+	text-decoration: none;
+}	
+
+.button_moncompte {
+	position: absolute;
+    left: 200px;
+    top: 10px;
+	color: #434444;
+	font-family: Arial, Hevlvetica, sans-serif;
+	text-align: center;
+	font-size: 16px;
+	font-weight: bold;
+	border: 0px;
+	width: auto;
+	background: none;
+	padding: 0px 16px;
+	margin: 0px;
+	cursor: pointer;
+	background-image: url(images/moncompte1.png) ;
+	background-repeat: no-repeat;
+	background-position: 0px 0px;
+	text-decoration: none;
+}
+
+.button_moncompte:hover {
+	color: #337efb;
+	font-family: Arial, Hevlvetica, sans-serif;
+	text-align: center;
+	font-size: 16px;
+	font-weight: bold;
+	border: 0px;
+	width: auto;
+	background: none;
+	padding: 0px 16px;
+	margin: 0px;
+	cursor: pointer;
+  background-image: url(images/moncompte2.png) ;
+	background-repeat: no-repeat;
+	background-position: 0px 0px;
+	text-decoration: none;
+}
+
+.button_moncompte:active  {
+	color: #000000;
+	font-family: Arial, Hevlvetica, sans-serif;
+	text-align: center;
+	font-size: 16px;
+	font-weight: bold;
+	border: 0px;
+	width: auto;
+	background: none;
+	padding: 0px 16px;
+	margin: 0px;
+	cursor: pointer;
+  background-image: url(images/moncompte3.png) ;
+	background-repeat: no-repeat;
+	background-position: 0px 0px;
+	text-decoration: none;
+}	
+
+.button_accueil {
+	position: absolute;
+    left: 200px;
+    top: 10px;
+	color: #434444;
+	font-family: Arial, Hevlvetica, sans-serif;
+	text-align: center;
+	font-size: 16px;
+	font-weight: bold;
+	border: 0px;
+	width: auto;
+	background: none;
+	padding: 0px 16px;
+	margin: 0px;
+	cursor: pointer;
+	background-image: url(images/accueil1.png) ;
+	background-repeat: no-repeat;
+	background-position: 0px 0px;
+	text-decoration: none;
+}
+
+.button_accueil:hover {
+	color: #337efb;
+	font-family: Arial, Hevlvetica, sans-serif;
+	text-align: center;
+	font-size: 16px;
+	font-weight: bold;
+	border: 0px;
+	width: auto;
+	background: none;
+	padding: 0px 16px;
+	margin: 0px;
+	cursor: pointer;
+  background-image: url(images/accueil2.png) ;
+	background-repeat: no-repeat;
+	background-position: 0px 0px;
+	text-decoration: none;
+}
+
+.button_accueil:active  {
+	color: #000000;
+	font-family: Arial, Hevlvetica, sans-serif;
+	text-align: center;
+	font-size: 16px;
+	font-weight: bold;
+	border: 0px;
+	width: auto;
+	background: none;
+	padding: 0px 16px;
+	margin: 0px;
+	cursor: pointer;
+  background-image: url(images/accueil3.png) ;
+	background-repeat: no-repeat;
+	background-position: 0px 0px;
+	text-decoration: none;
+}	
+.button_parametres {
+	position: absolute;
+    left: 860px;
+    top: 4px;
+	color: #ffffff;
+	font-family: Arial, Hevlvetica, sans-serif;
+	text-align: center;
+	font-size: 10px;
+	/*font-weight: bold;*/
+	border: 0px;
+	width: auto;
+	background: none;
+	padding: 0px 16px;
+	margin: 0px;
+	cursor: pointer;
+	background-image: url(images/logo_parametres.png) ;
+	background-repeat: no-repeat;
+	background-position: 0px 0px;
+	text-decoration: none;
+}
+
+.button_parametres:hover {
+	color: #000000;
+	font-family: Arial, Hevlvetica, sans-serif;
+	text-align: center;
+	font-size: 10px;
+	/*font-weight: bold;*/
+	border: 0px;
+	width: auto;
+	background: none;
+	padding: 0px 16px;
+	margin: 0px;
+	cursor: pointer;
+  background-image: url(images/logo_parametres_survol.png) ;
+	background-repeat: no-repeat;
+	background-position: 0px 0px;
+	text-decoration: none;
+}
+
+.button_parametres:active  {
+	color: #ffffff;
+	font-family: Arial, Hevlvetica, sans-serif;
+	text-align: center;
+	font-size: 10px;
+	/*font-weight: bold;*/
+	border: 0px;
+	width: auto;
+	background: none;
+	padding: 0px 16px;
+	margin: 0px;
+	cursor: pointer;
+  background-image: url(images/logo_parametres_clic.png) ;
+	background-repeat: no-repeat;
+	background-position: 0px 0px;
+	text-decoration: none;
+}
+
+.button_sauvegarde {
+	position: absolute;
+    left: 750px;
+    top: 4px;
+	color: #ffffff;
+	font-family: Arial, Hevlvetica, sans-serif;
+	text-align: center;
+	font-size: 10px;
+	/*font-weight: bold;*/
+	border: 0px;
+	width: auto;
+	background: none;
+	padding: 0px 16px;
+	margin: 0px;
+	cursor: pointer;
+	background-image: url(images/logo_sauvegarde.png) ;
+	background-repeat: no-repeat;
+	background-position: 0px 0px;
+	text-decoration: none;
+}
+
+.button_sauvegarde:hover {
+	color: #000000;
+	font-family: Arial, Hevlvetica, sans-serif;
+	text-align: center;
+	font-size: 10px;
+	/*font-weight: bold;*/
+	border: 0px;
+	width: auto;
+	background: none;
+	padding: 0px 16px;
+	margin: 0px;
+	cursor: pointer;
+  background-image: url(images/logo_sauvegarde_survol.png) ;
+	background-repeat: no-repeat;
+	background-position: 0px 0px;
+	text-decoration: none;
+}
+
+.button_sauvegarde:active  {
+	color: #ffffff;
+	font-family: Arial, Hevlvetica, sans-serif;
+	text-align: center;
+	font-size: 10px;
+	/*font-weight: bold;*/
+	border: 0px;
+	width: auto;
+	background: none;
+	padding: 0px 16px;
+	margin: 0px;
+	cursor: pointer;
+  background-image: url(images/logo_sauvegarde_clic.png) ;
+	background-repeat: no-repeat;
+	background-position: 0px 0px;
+	text-decoration: none;
+}
+
+.button_up {
+	color: #d6e6f8;
+	font-family: Arial, Hevlvetica, sans-serif;
+	text-align: center;
+	font-size: 24px;
+	font-weight: bold;
+	border: 0px;
+	width: auto;
+	background: none;
+	padding: 0px 16px;
+	margin: 0px;
+	cursor: pointer;
+	background-image: url(images/up1.png) ;
+	background-repeat: no-repeat;
+	background-position: 0px 0px;
+	text-decoration: none;
+}
+
+.button_up:hover {
+	color: #ffffff;
+	font-family: Arial, Hevlvetica, sans-serif;
+	text-align: center;
+	font-size: 24px;
+	font-weight: bold;
+	border: 0px;
+	width: auto;
+	background: none;
+	padding: 0px 16px;
+	margin: 0px;
+	cursor: pointer;
+  background-image: url(images/up2.png) ;
+	background-repeat: no-repeat;
+	background-position: 0px 0px;
+	text-decoration: none;
+}
+
+.button_up:active  {
+	color: #000000;
+	font-family: Arial, Hevlvetica, sans-serif;
+	text-align: center;
+	font-size: 24px;
+	font-weight: bold;
+	border: 0px;
+	width: auto;
+	background: none;
+	padding: 0px 16px;
+	margin: 0px;
+	cursor: pointer;
+  background-image: url(images/up3.png) ;
+	background-repeat: no-repeat;
+	background-position: 0px 0px;
+	text-decoration: none;
+}
+
+.button_down {
+	color: #d6e6f8;
+	font-family: Arial, Hevlvetica, sans-serif;
+	text-align: center;
+	font-size: 24px;
+	font-weight: bold;
+	border: 0px;
+	width: auto;
+	background: none;
+	padding: 0px 16px;
+	margin: 0px;
+	cursor: pointer;
+	background-image: url(images/down1.png) ;
+	background-repeat: no-repeat;
+	background-position: 0px 0px;
+	text-decoration: none;
+}
+
+.button_down:hover {
+	color: #ffffff;
+	font-family: Arial, Hevlvetica, sans-serif;
+	text-align: center;
+	font-size: 24px;
+	font-weight: bold;
+	border: 0px;
+	width: auto;
+	background: none;
+	padding: 0px 16px;
+	margin: 0px;
+	cursor: pointer;
+  background-image: url(images/down2.png) ;
+	background-repeat: no-repeat;
+	background-position: 0px 0px;
+	text-decoration: none;
+}
+
+.button_down:active  {
+	color: #000000;
+	font-family: Arial, Hevlvetica, sans-serif;
+	text-align: center;
+	font-size: 24px;
+	font-weight: bold;
+	border: 0px;
+	width: auto;
+	background: none;
+	padding: 0px 16px;
+	margin: 0px;
+	cursor: pointer;
+  background-image: url(images/down3.png) ;
+	background-repeat: no-repeat;
+	background-position: 0px 0px;
+	text-decoration: none;
+}	
